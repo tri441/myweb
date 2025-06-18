@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - Car Dealership</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #007bff;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        h1 {
+            color: #eee;
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: black
+            ;
+        }
+        
+        h2 {
+            color: black;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+        
+        /* Order Form */
+        .order-form {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: black ;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: black;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        footer p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Dealership</h1>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="Cars.html">Car Inventory</a>
+        <a href="order.html" class="active">Order</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <hr>
+    
+    <section class="order-form">
+        <h2>Place Your Order</h2>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="car">Select Car</label>
+                <select id="car" name="car" required>
+                    <option value="" disabled selected>Select a car model</option>
+                    <option value="toyota-camry">Toyota Camry</option>
+                    <option value="honda-civic">Honda Civic</option>
+                    <option value="ford-mustang">Ford Mustang</option>
+                    <option value="tesla-model3">Tesla Model 3</option>
+                    <option value="bmw-x5">BMW X5</option>
+                    <option value="mercedes-cclass">Mercedes-Benz C-Class</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Additional Message</label>
+                <textarea id="message" name="message" placeholder="Any additional requests or questions?"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Plan Outer</p>
+        © 2025 Car Dealership. All rights reserved.
+    </footer>
+</body>
+</html>
