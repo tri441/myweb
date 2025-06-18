@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Mercedes-Benz Dealership</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+
+    /* Navigation */
+    .top-nav {
+      background-color: #000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .top-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-nav-left img.logo {
+      height: 40px;
+    }
+
+    .top-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Content Styling */
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    h2 {
+      color: #34495e;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #ddd;
+      margin: 30px 0;
+    }
+
+    /* Core Values */
+    .core-values {
+      margin: 20px 0;
+    }
+
+    .core-values ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .core-values li {
+      background-color: #f8f9fa;
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-left: 4px solid #3498db;
+    }
+
+    /* Team Section */
+    .team-section {
+      margin: 30px 0;
+    }
+
+    .team-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .team-table td {
+      padding: 15px;
+      border: 1px solid #eee;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    .team-table td:hover {
+      background-color: #f9f9f9;
+    }
+
+    .team-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Images */
+    .showroom-image {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: #7f8c8d;
+      font-size: 0.9em;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR WITH LOGO -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <img src="images/logo.png" alt="Mercedes-Benz Logo" class="logo" />
+      <span style="font-weight: bold; font-size: 1.2em;">Mercedes-Benz</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Cars</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <h1>About Our Dealership</h1>
+  <p>
+    At Mercedes-Benz Dealership, we pride ourselves on providing a premium car buying experience for all customers. With over a decade of experience, our team is passionate about luxury automobiles, honest consultation, and outstanding service.
+  </p>
+  <p>
+    Whether you're looking for a new Mercedes sedan, SUV, or a certified pre-owned vehicle, our inventory is carefully curated to meet every lifestyle. We also provide in-house financing options, maintenance services, and fast nationwide delivery.
+  </p>
+
+  <img src="images/showroom.jpg" alt="Mercedes-Benz Showroom" class="showroom-image" />
+
+  <hr>
+
+  <section class="core-values">
+    <h2>Our Core Values</h2>
+    <ul>
+      <li>Guaranteed Quality - Every vehicle meets our rigorous inspection standards</li>
+      <li>Top-Notch Reputation - Trusted by customers for over 15 years</li>
+      <li>Excellent Customer Service - Dedicated support throughout your ownership</li>
+      <li>Competitive Pricing - Best value for premium Mercedes-Benz vehicles</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <table class="team-table">
+      <tr>
+        <td>
+          <img src="images/john.jpg" alt="Ola Källenius" class="team-photo" />
+          <strong>Ola Källenius</strong><br>CEO
+        </td>
+        <td>
+          <img src="images/jane.jpg" alt="Jack97" class="team-photo" />
+          <strong>Jack97</strong><br>Head of Sales
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/michael.jpg" alt="Chovy" class="team-photo" />
+          <strong>Chovy</strong><br>Customer Consultant
+        </td>
+        <td>
+          <img src="images/sarah.jpg" alt="Mon of Sol" class="team-photo" />
+          <strong>Mon of Sol</strong><br>Customer Consultant
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    © 2025 Mercedes-Benz Dealership. All rights reserved.
+  </footer>
+
+</body>
+</html>
